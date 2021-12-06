@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+  <Button
+      android:id="@+id/AddButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="76dp"
+      android:onClick="createNewOrder"
+      android:text="Add"
+      app:layout_constraintEnd_toStartOf="@+id/NextButton"
+      app:layout_constraintHorizontal_bias="0.975"
+      app:layout_constraintStart_toEndOf="@+id/PrevButton"
+      app:layout_constraintTop_toBottomOf="@+id/orderNameEditText"
+      tools:ignore="NotSibling,OnClick" />
+
+  <Button
+      android:id="@+id/PrevButton"
+      android:layout_width="82dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="78dp"
+      android:onClick="showPrevOrder"
+      android:text="Prev"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/AddButton"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/orderNameEditText"
+      app:layout_constraintVertical_bias="0.0"
+      tools:ignore="OnClick" />
+
+  <Button
+      android:id="@+id/NextButton"
+      android:layout_width="82dp"
+      android:layout_height="48dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="30dp"
+      android:onClick="showNextOrder"
+      android:text="Next"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/orderNameEditText"
+      app:layout_constraintVertical_bias="0.0"
+      tools:ignore="OnClick" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="100dp"
+      android:layout_marginTop="26dp"
+      android:layout_marginEnd="95dp"
+      android:scrollbarSize="4dp"
+      android:text="Clothing store"
+      android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/orderNameEditText"
+      android:layout_width="272dp"
+      android:layout_height="42dp"
+      android:layout_marginStart="70dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginEnd="69dp"
+      android:ems="10"
+      android:gravity="start|top"
+      android:inputType="textMultiLine"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.482"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView"
+      tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="409dp"
+      android:layout_height="404dp"
+      android:layout_marginStart="55dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="56dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2"
+      app:srcCompat="@drawable/im" />
+
+  <Button
+      android:id="@+id/DeleteButton"
+      android:layout_width="88dp"
+      android:layout_height="51dp"
+      android:layout_marginBottom="13dp"
+      android:onClick="deleteElem"
+      android:text="Del"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.505"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:ignore="OnClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
